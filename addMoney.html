@@ -7,12 +7,13 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/256c63fa14.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="inter-regular" >
-<section class="rounded-br-2xl rounded-bl-2xl">
+<body class="inter-regular  bg-[#F4F5F7]" >
+<section class="rounded-br-2xl rounded-bl-2xl bg-white">
        <section class="max-w-lg mx-auto">
      <nav class="flex justify-between items-center px-8 py-6 border-b-[1px] border-[rgba(8,8,8,0.2)] ">
         <div class="flex ">
@@ -31,7 +32,7 @@
         <h1 class="font-bold text-2xl">🔥 Welcome to Payooo!</h1>
         <p class="text-[rgba(8,8,8,0.5)] mt-2">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
     </div>
-    <section class="card grid grid-cols-3 gap-6 p-4 mb-5">
+    <section class="card grid grid-cols-3 gap-6 p-4 mb-5 bg-white">
         <div class=" w-[120px] p-3 border-[1px] border-[rgba(8,8,8,0.2)]  rounded-xl">
             <div class="flex flex-col items-center justify-center gap-2">
                 <img src="assets/wallet1.png" alt="">
@@ -68,85 +69,31 @@
                 <p class="text-[rgba(8,8,8,0.5)]">Add Money</p>
             </div>
         </div>
-    </section >
+    </section>
+    
 
    </section>
 </section>
-<section class="list h-full max-w-lg mx-auto bg-[#F4F5F7] p-4">
-    <div class="flex justify-between mb-4">
-        <h2 class="text-xl ms-1">Latest Payment</h2>
-        <p class="text-[rgba(8,8,8,0.5)]">View All</p>
-    </div>
-    <div class="container mt-3">
-        <div class="h-[72px] bg-white rounded-2xl flex justify-between items-center
-        p-5">
-            <div class="flex gap-4">
-                <div class="bg-[rgba(8,8,8,0.1)] p-2.5 border-none rounded-[50%]">
-                    <img src="assets/wallet1.png" alt="">
-                </div>
-                <div>
-                    <span class="text-[rgba(8,8,8,0.8)] font-semibold">Electricity Bill</span>
-                    <p class="text-[rgba(8,8,8,0.8)] text-[12px]">Tuesday, 4:21PM</p>
-                </div>
-            </div>
-            <p><i class="fa-solid fa-ellipsis-vertical text-xl text-[rgba(8,8,8,0.7)]"></i></p>
-        </div>
-        
+<section  class="list  max-w-lg mx-auto px-4 ">
+    <h1 class="text-[rgba(8,8,8,0.9)] text-3xl ms-3 mb-4">Add Money</h1>
+    <form class=" p-5 bg-white rounded-2xl mx-auto ">
+        <label for="bank">Selec a Bank</label>
+        <select class=" w-full p-5 bg-[rgba(8,8,8,0.05)] my-3 rounded-4xl me-4" name="" id="" >
+            <option value="" disabled selected>Select a Bank Account</option>
+            <option value="">DBBL Bank</option>
+            <option value="">Janata Bank</option>
+            <option value="">Asia Bank</option>
+            <option value="">BRAC Bank</option>
+        </select>
+        <label for="number">Bank Account Number</label>
+        <input class="w-full p-5 bg-[rgba(8,8,8,0.05)] my-3 rounded-4xl" type="text">
+        <label for="number">Bank Account Number</label>
+        <input class="w-full p-5 bg-[rgba(8,8,8,0.05)] my-3 rounded-4xl" type="text">
+        <label for="number">Bank Account Number</label>
+        <input class="w-full p-5 bg-[rgba(8,8,8,0.05)] my-3 rounded-4xl" type="text">
+        <button class=" p-4 my-5 text-white text-2xl w-full rounded-4xl bg-[#0874F2]">Add Money</button>
 
-    </div>
-    <div class="container mt-3">
-        <div class="h-[72px] bg-white rounded-2xl flex justify-between items-center
-        p-5">
-            <div class="flex gap-4">
-                <div class="bg-[rgba(8,8,8,0.1)] p-2.5 border-none rounded-[50%]">
-                    <img src="assets/wallet1.png" alt="">
-                </div>
-                <div>
-                    <span class="text-[rgba(8,8,8,0.8)] font-semibold">Electricity Bill</span>
-                    <p class="text-[rgba(8,8,8,0.8)] text-[12px]">Tuesday, 4:21PM</p>
-                </div>
-            </div>
-            <p><i class="fa-solid fa-ellipsis-vertical text-xl text-[rgba(8,8,8,0.7)]"></i></p>
-        </div>
-        
-
-    </div>
-    <div class="container mt-3">
-        <div class="h-[72px] bg-white rounded-2xl flex justify-between items-center
-        p-5">
-            <div class="flex gap-4">
-                <div class="bg-[rgba(8,8,8,0.1)] p-2.5 border-none rounded-[50%]">
-                    <img src="assets/wallet1.png" alt="">
-                </div>
-                <div>
-                    <span class="text-[rgba(8,8,8,0.8)] font-semibold">Electricity Bill</span>
-                    <p class="text-[rgba(8,8,8,0.8)] text-[12px]">Tuesday, 4:21PM</p>
-                </div>
-            </div>
-            <p><i class="fa-solid fa-ellipsis-vertical text-xl text-[rgba(8,8,8,0.7)]"></i></p>
-        </div>
-        
-
-    </div>
-    <div class="container mt-3">
-        <div class="h-[72px] bg-white rounded-2xl flex justify-between items-center
-        p-5">
-            <div class="flex gap-4">
-                <div class="bg-[rgba(8,8,8,0.1)] p-2.5 border-none rounded-[50%]">
-                    <img src="assets/wallet1.png" alt="">
-                </div>
-                <div>
-                    <span class="text-[rgba(8,8,8,0.8)] font-semibold">Electricity Bill</span>
-                    <p class="text-[rgba(8,8,8,0.8)] text-[12px]">Tuesday, 4:21PM</p>
-                </div>
-            </div>
-            <p><i class="fa-solid fa-ellipsis-vertical text-xl text-[rgba(8,8,8,0.7)]"></i></p>
-        </div>
-        
-
-    </div>
-
-
+    </form>
 </section>
 </body>
 <script src="main.js"></script>
