@@ -7,7 +7,7 @@ document
     const userNumber = document.getElementById("input-number").value;
     const userPin = document.getElementById("input-pin").value;
     if (userNumber === number && userPin === pin) {
-      window.open("addMoney.html", "block");
+      window.open("homepage.html", "block");
     } else {
       console.log("Wrong");
     }
