@@ -7,7 +7,6 @@ function cheakCard(id){
     btnCheak.style.backgroundColor = 'rgba(8, 116, 242, 0.05)';
     btnCheak.style.border = "1px solid #0874F2";
 }
-
 function toggleCard(){
     const btnCards = document.getElementsByClassName('card');
         for(const card of btnCards){
@@ -15,7 +14,6 @@ function toggleCard(){
             card.style.border = "rgba(8,8,8,0.2)";
         }
 }
-
 function toggleBtn(currentId){
 const forms = document.getElementsByClassName('forms');
  for(const form of forms){
@@ -24,8 +22,6 @@ const forms = document.getElementsByClassName('forms');
 const currentForm = document.getElementById(currentId);
  currentForm.style.display = 'block'
 }
-
-
 document.getElementById('add-money')
 .addEventListener('click', function(){
     toggleBtn('add-money-form');
@@ -39,22 +35,18 @@ document.getElementById('cash-out-money')
      cheakCard('cash-out-money')
 
 })
-
 document.getElementById('transfer-money')
 .addEventListener('click', function(){
     toggleBtn('transfer-form');
      toggleCard();
      cheakCard('transfer-money')
 })
-
 document.getElementById('get-bonus')
 .addEventListener('click', function(){
 toggleBtn('get-bonus-form');
 toggleCard();
 cheakCard('get-bonus')
 })
-
-
 // implement money
 const accountNum = 2317011;
 const pinNum = 2580;
@@ -69,23 +61,17 @@ function getInputValueNumber(id){
  const inputNumber = parseInt(inputValue);
  return inputNumber;
 }
-
 document.getElementById('btn-for-add')
 .addEventListener('click', function(){
     const acNum = getInputValueNumber('account-number');
     const userPin = getInputValueNumber('pin-number');
     const amount = getInputValueNumber('add-amount')
-    console.log(typeof(amount));
-    console.log(bankName);
    if(bankName !== ''){
     if(accountNum === acNum ){
         if(userPin === pinNum){
             let currentBalanceStr = document.getElementById('balance');
-            console.log(currentBalanceStr);
             const balance = parseInt(currentBalanceStr.innerText);
-            console.log(balance);
             const total = balance + amount;
-            console.log(total);
             currentBalanceStr.innerText = '';
             currentBalanceStr.innerText = total;
         }
@@ -101,6 +87,5 @@ document.getElementById('btn-for-add')
    }
    for(const input of inputField){
     input.value = '' ;
-    
 }
 })

@@ -12,4 +12,6 @@ document
       const allert = document.getElementById('allert-msg');
       allert.style.display = 'block';
     }
+    userNumber.value = '';
+    userPin.value = '';
   });
