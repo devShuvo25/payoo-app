@@ -1,4 +1,7 @@
-
+document.getElementById('btn-log-out')
+.addEventListener('click', function(){
+    window.open("index.html");
+})
 function cheakCard(id){
     const btnCheak = document.getElementById(id);
     btnCheak.style.backgroundColor = 'rgba(8, 116, 242, 0.05)';
