@@ -10,16 +10,16 @@
 <body>
     <section class="max-w-lg h-[844px]  mx-auto my-auto flex flex-col 
     rounded-2xl items-center justify-center bg-[#F4F5F7]">
-    <div class="logo flex flex-col items-center justify-center
-     bg-[url(./assets/bg.png)] w-[60%] h-40 bg-cover  ">
+    <div  class="logo flex flex-col items-center justify-center
+     bg-[url(./assets/bg.png)] w-[60%] h-40 bg-cover mb-2 ">
         <img src="./assets/Group.png" alt="">
     </div>
-
-        <form class="flex flex-col  w-[85%]  justify-center bg-white rounded-2xl p-6">
+        <p id="allert-msg" class=" hidden text-[#d00000] text-center mb-5">Invalid Number or Pin</p>
+         <form class="flex flex-col  w-[85%]  justify-center bg-white rounded-2xl p-6">
             <label class="ms-1 font-semibold" for="number">Your Name</label>
             <input id="input-number" class="p-3 my-2 bg-[#F4F5F7] rounded-xl outline-none" type="text" placeholder="Enter Your Number">
             <label class="ms-1 font-semibold" for="number">Your Pin</label>
-            <input id="input-pin" class="p-3 my-2 bg-[#F4F5F7] rounded-xl outline-none"  type="text"type="text" placeholder="Enter Your 4-Digit PIN">
+            <input id="input-pin" class="p-3 my-2 bg-[#F4F5F7] rounded-xl outline-none"  type="password"type="text" placeholder="Enter Your 4-Digit PIN">
             <button id="btn-login" type="button" class="bg-[#0874F2] text-white rounded-4xl p-3 mt-4 font-semibold cursor-pointer">Log in</button>
         </form>
 

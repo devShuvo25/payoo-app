@@ -19,7 +19,6 @@ function toggleCard(){
 function toggleBtn(currentId){
 const forms = document.getElementsByClassName('forms');
  for(const form of forms){
-    console.log(form);
     form.style.display = "none";
  }
 const currentForm = document.getElementById(currentId);
@@ -53,4 +52,55 @@ document.getElementById('get-bonus')
 toggleBtn('get-bonus-form');
 toggleCard();
 cheakCard('get-bonus')
+})
+
+
+// implement money
+const accountNum = 2317011;
+const pinNum = 2580;
+const userAccountNum = document.getElementById('add-amount').value;
+const selectElement = document.getElementById('bank-acconut-name');
+const value = selectElement.value; 
+const  bankName =  selectElement.options[selectElement.selectedIndex].text;
+const inputField = document.getElementsByClassName('input-field');
+function getInputValueNumber(id){
+ const input = document.getElementById(id);
+ const inputValue = input.value;
+ const inputNumber = parseInt(inputValue);
+ return inputNumber;
+}
+
+document.getElementById('btn-for-add')
+.addEventListener('click', function(){
+    const acNum = getInputValueNumber('account-number');
+    const userPin = getInputValueNumber('pin-number');
+    const amount = getInputValueNumber('add-amount')
+    console.log(typeof(amount));
+    console.log(bankName);
+   if(bankName !== ''){
+    if(accountNum === acNum ){
+        if(userPin === pinNum){
+            let currentBalanceStr = document.getElementById('balance');
+            console.log(currentBalanceStr);
+            const balance = parseInt(currentBalanceStr.innerText);
+            console.log(balance);
+            const total = balance + amount;
+            console.log(total);
+            currentBalanceStr.innerText = '';
+            currentBalanceStr.innerText = total;
+        }
+        else{
+            console.log('Invalid pin');
+        }
+    }
+    else{
+        console.log('Invalid account number');
+    }
+   }else{
+    console.log('Select bank account first');
+   }
+   for(const input of inputField){
+    input.value = '' ;
+    
+}
 })

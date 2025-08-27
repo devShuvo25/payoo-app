@@ -1,5 +1,5 @@
 /*script for login succesfully*/
-const number = "123456789";
+const number = "01610801482";
 const pin = "2580";
 document
   .getElementById("btn-login")
@@ -9,6 +9,7 @@ document
     if (userNumber === number && userPin === pin) {
       window.open("homepage.html", "block");
     } else {
-      console.log("Wrong");
+      const allert = document.getElementById('allert-msg');
+      allert.style.display = 'block';
     }
   });

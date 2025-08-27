@@ -18,7 +18,7 @@
         <div class="flex ">
             <img class="h-full w-[50px]" src="/assets/Group.png" alt="">
             <div class="balance ms-3">
-                <span class="font-bold">৳4858.00</span>
+                <span class="font-bold flex gap-1">৳<p id="balance">0.00</p></span>
                 <p class="text-[#080808] opacity-50">Available Balance</p>
             </div>
         </div>
@@ -151,18 +151,20 @@
     <h1 class="text-[rgba(8,8,8,0.9)] text-3xl ms-3 mb-4">Add Money</h1>
     <form class=" p-4 bg-white rounded-2xl mx-auto ">
         <label class="font-semibold" for="bank">Selec a Bank</label>
-        <select class=" outline-none border-[rgba(8,8,8,0.2)] w-full p-4 py-2.5 pr-3 bg-[rgba(8,8,8,0.05)] outline-[rgba(8,8,8,0.2)] my-3 rounded-4xl me-4" name="" id="" >
-            <option class="border-none rounded-4xl" value="" disabled selected>Select a Bank Account</option>
-            <option value="">DBBL Bank</option>
-            <option value="">Janata Bank</option>
-            <option value="">Asia Bank</option>
-            <option value="">BRAC Bank</option>
+        <select id="bank-acconut-name" class="input-field outline-none border-[rgba(8,8,8,0.2)] w-full p-4 py-2.5 pr-3 bg-[rgba(8,8,8,0.05)] outline-[rgba(8,8,8,0.2)] my-3 rounded-4xl me-4" name="" id="" >
+            <option class="border-none rounded-4xl" value="action" disabled>Select a Bank Account</option>
+            <option value="dbbl" >DBBL Bank</option>
+            <option value="janata">Janata Bank</option>
+            <option value="asia">Asia Bank</option>
+            <option value="brac">BRAC Bank</option>
         </select>
         <label class="font-semibold" for="number">Bank Account Number</label>
-        <input class="w-full p-4 py-2.5 bg-[rgba(8,8,8,0.05)] my-3 rounded-4xl outline-[rgba(8,8,8,0.2)]  border-[rgba(8,8,8,0.2)]" type="text" placeholder="Enter 11 digit account number">
+        <input id="account-number" class="input-field w-full p-4 py-2.5 bg-[rgba(8,8,8,0.05)] my-3 rounded-4xl outline-[rgba(8,8,8,0.2)]  border-[rgba(8,8,8,0.2)]" type="text" placeholder="Enter 11 digit account number">
+        <label class="font-semibold" for="number">Amount</label>
+        <input id="add-amount" class="input-field w-full p-4 py-2.5 bg-[rgba(8,8,8,0.05)] my-3 rounded-4xl outline-[rgba(8,8,8,0.2)] border-[rgba(8,8,8,0.2)]" type="text" placeholder="Enter Amount to withdraw">
         <label class="font-semibold" for="number">PIN Number</label>
-        <input class="w-full p-4 py-2.5 bg-[rgba(8,8,8,0.05)] my-3 rounded-4xl outline-[rgba(8,8,8,0.2)] border-[rgba(8,8,8,0.2)]" type="text" placeholder="Enter 4 digit pin number">
-        <button class="  py-2.5 my-5 text-white text-[1rem] w-full rounded-4xl bg-[#0874F2]">Add Money</button>
+        <input id="pin-number" class="input-field w-full p-4 py-2.5 bg-[rgba(8,8,8,0.05)] my-3 rounded-4xl outline-[rgba(8,8,8,0.2)] border-[rgba(8,8,8,0.2)]" type="text" placeholder="Enter 4 digit pin number">
+        <button id="btn-for-add" type="button" class="  py-2.5 my-5 text-white text-[1rem] w-full rounded-4xl bg-[#0874F2]">Add Money</button>
 
     </form>
 </section>
